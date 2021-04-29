@@ -1,0 +1,16 @@
+{
+  "libs": [
+    "jquery"
+  ],
+  "loadEagerly": [
+    "./**/*.js"
+  ],
+  "dontLoad": [
+    "./node_modules/"
+  ],
+  "plugins": {
+    "requirejs": {
+      "baseURL": "./"
+    }
+  }
+}

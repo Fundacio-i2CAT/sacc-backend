@@ -1,0 +1,18 @@
+module.exports = function (app, merkleTree) {
+  const loginRoute = require('./login.js')
+  loginRoute(app)
+  const registerRequest = require('./registerRequest.js')
+  registerRequest(app)
+  const user = require('./user.js')
+  user(app, merkleTree)
+  const accessRequest = require('./accessRequest.js')
+  accessRequest(app)
+  const project = require('./project.js')
+  project(app)
+  const siblings = require('./siblings.js')
+  siblings(app, merkleTree)
+  const topic = require('./topic.js')
+  topic(app, merkleTree)
+  const circuit = require('./circuit.js')
+  circuit(app)
+}

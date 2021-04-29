@@ -1,0 +1,11 @@
+node_modules
+.env
+venv
+.tern-port
+abi.json
+contracts/address.json
+sample.file
+
+# IDE files
+.idea/
+trusted-setup/*.json
